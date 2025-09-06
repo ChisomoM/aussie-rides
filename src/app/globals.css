@@ -19,6 +19,40 @@
   }
 }
 
+/* src/app/globals.css */
+/* Button base (opt-in): use the .btn class to get the brand gradient */
+.btn {
+  color: #ffffff;
+  padding: 0.5rem 1.5rem; /* approx Tailwind px-6 py-2 */
+  border-radius: 0.5rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(135deg, #05976a 0%, #10b981 100%);
+  border: none;
+  cursor: pointer;
+  transition: filter .18s ease, background-color .18s ease;
+}
+.btn:hover { filter: brightness(0.95); }
+.btn:focus-visible { outline: 3px solid rgba(16,185,129,0.15); outline-offset: 2px; }
+
+/* Variants */
+.btn-outline {
+  color: #065f46; /* deep emerald */
+  background-color: #ffffff;
+  border: 1px solid rgba(16,185,129,0.25);
+  background-image: none;
+}
+.btn-ghost {
+  color: #065f46;
+  background-color: transparent;
+  background-image: none;
+}
+
+/* Sizes */
+.btn-sm { padding: 0.25rem 0.75rem; font-size: 0.875rem; border-radius: 0.375rem; }
+.btn-xs { padding: 0.125rem 0.5rem; font-size: 0.75rem; border-radius: 0.25rem; }
+
 body {
   background: var(--background);
   color: var(--foreground);
