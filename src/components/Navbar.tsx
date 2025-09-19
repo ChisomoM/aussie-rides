@@ -19,30 +19,30 @@ export default function Navbar() {
               height={40} 
               className="h-8 w-8"
             />
-            <Link href="/" className="ml-2 text-2xl font-bold text-gray-900">
+            <Link href="#home" className="ml-2 text-2xl font-bold text-gray-900">
               Aussie Rides
             </Link>
           </div>
           
           <nav className="hidden md:flex space-x-8">
-            <Link href="/" className="text-gray-700 hover:text-emerald-600 transition-colors">
+            <Link href="#home" className="text-gray-700 hover:text-emerald-600 transition-colors">
               Home
             </Link>
-            <Link href="/vehicles" className="text-gray-700 hover:text-emerald-600 transition-colors">
+            <Link href="#vehicles" className="text-gray-700 hover:text-emerald-600 transition-colors">
               Vehicles
             </Link>
-            <Link href="/about" className="text-gray-700 hover:text-emerald-600 transition-colors">
+            <Link href="#about" className="text-gray-700 hover:text-emerald-600 transition-colors">
               About
             </Link>
-            <Link href="/contact" className="text-gray-700 hover:text-emerald-600 transition-colors">
+            <Link href="#contact" className="text-gray-700 hover:text-emerald-600 transition-colors">
               Contact
             </Link>
           </nav>
 
           <div className="hidden md:flex items-center space-x-4">
-            <button className="btn btn-sm">
+            <Link href="#book" className="btn btn-sm">
               Book Test Drive
-            </button>
+            </Link>
           </div>
 
           <button 
@@ -66,21 +66,21 @@ export default function Navbar() {
       {isMenuOpen && (
         <div className="md:hidden bg-white border-t">
           <div className="px-2 pt-2 pb-3 space-y-1">
-            <Link href="/" className="block px-3 py-2 text-gray-700 hover:text-emerald-600">
+            <Link href="#home" className="block px-3 py-2 text-gray-700 hover:text-emerald-600">
               Home
             </Link>
-            <Link href="/vehicles" className="block px-3 py-2 text-gray-700 hover:text-emerald-600">
+            <Link href="#vehicles" className="block px-3 py-2 text-gray-700 hover:text-emerald-600">
               Vehicles
             </Link>
-            <Link href="/about" className="block px-3 py-2 text-gray-700 hover:text-emerald-600">
+            <Link href="#about" className="block px-3 py-2 text-gray-700 hover:text-emerald-600">
               About
             </Link>
-            <Link href="/contact" className="block px-3 py-2 text-gray-700 hover:text-emerald-600">
+            <Link href="#contact" className="block px-3 py-2 text-gray-700 hover:text-emerald-600">
               Contact
             </Link>
-            <button className="w-full text-left btn">
+            <Link href="#book" className="w-full text-left btn">
               Book Test Drive
-            </button>
+            </Link>
           </div>
         </div>
       )}
