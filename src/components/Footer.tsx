@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Footer() {
   return (
@@ -9,11 +10,15 @@ export default function Footer() {
         <div className="grid md:grid-cols-4 gap-8">
           <div>
             <div className="flex items-center mb-4">
-              <svg className="h-8 w-8 text-emerald-400" fill="currentColor" viewBox="0 0 20 20">
-                <path d="M8 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM15 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z" />
-                <path d="M3 4a1 1 0 00-1 1v10a1 1 0 001 1h1.05a2.5 2.5 0 014.9 0H10a1 1 0 001-1V5a1 1 0 00-1-1H3zM14 7a1 1 0 00-1 1v6.05A2.5 2.5 0 0115.95 16H17a1 1 0 001-1V8a1 1 0 00-1-1h-3z" />
-              </svg>
-              <span className="ml-2 text-2xl font-bold">Aussie Rides</span>
+         <Image
+         src= {"/images/logos/Logo-v1.png"}
+         width={0}
+         height={0}
+        // className="h-8 sm:h-12 md:h-12 w-auto object-contain max-w-[150px] sm:max-w-[180px] md:max-w-[220px]"
+         className="h-8 sm:h-8 md:h-8 w-auto object-contain max-w-[150px] sm:max-w-[180px] md:max-w-[220px]"
+         alt="Aussie Rides Logo"
+         unoptimized
+         ></Image>
             </div>
             <p className="text-gray-400 mb-4">Zambia&apos;s premier destination for luxury vehicles. Experience affordable luxury with exceptional service.</p>
           </div>
