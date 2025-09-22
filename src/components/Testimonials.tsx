@@ -8,7 +8,7 @@ export default function Testimonials() {
       title: "Business Owner",
       location: "Lusaka",
       rating: 5,
-      text: "Exceptional service and quality vehicles. The team at Aussie Motors made my dream of owning a luxury car affordable and stress-free.",
+      text: "Exceptional service and quality vehicles. The team at Aussie Rides made my dream of owning a luxury car affordable and stress-free.",
       image: "https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&w=200"
     },
     {

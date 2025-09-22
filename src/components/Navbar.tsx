@@ -4,6 +4,8 @@ import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
 
+import logo from "/images/logos/Logo-v2.png";
+
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -12,16 +14,24 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center">
+            {/* <img
+            src={logo}
+            alt = "Aussie Rides Logo"
+                 className="h-8 sm:h-12 md:h-12 w-auto object-contain max-w-[150px] sm:max-w-[180px] md:max-w-[220px]"
+            >
+            </img> */}
+            <Link href="#home">
             <Image 
-              src="/Group 1.png" 
+              src="/images/logos/Logo-v2.png" 
               alt="Aussie Rides Logo" 
-              width={40} 
-              height={40} 
-              className="h-8 w-8"
+              width={0} 
+              height={0} 
+     className="h-8 sm:h-8 md:h-8 w-auto object-contain max-w-[150px] sm:max-w-[180px] md:max-w-[220px]"
+              priority
+              unoptimized
             />
-            <Link href="#home" className="ml-2 text-2xl font-bold text-gray-900">
-              Aussie Rides
             </Link>
+         
           </div>
           
           <nav className="hidden md:flex space-x-8">

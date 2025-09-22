@@ -21,7 +21,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Aussie Motors - Premium Luxury Vehicles in Zambia",
+  title: "Aussie Rides - Premium Luxury Vehicles in Zambia",
   description: "Zambia's premier destination for luxury vehicles. Experience affordable luxury with exceptional service. Browse GWM, BMW, Mercedes-Benz and more.",
 };
 

@@ -13,7 +13,7 @@ export default function Footer() {
                 <path d="M8 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM15 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z" />
                 <path d="M3 4a1 1 0 00-1 1v10a1 1 0 001 1h1.05a2.5 2.5 0 014.9 0H10a1 1 0 001-1V5a1 1 0 00-1-1H3zM14 7a1 1 0 00-1 1v6.05A2.5 2.5 0 0115.95 16H17a1 1 0 001-1V8a1 1 0 00-1-1h-3z" />
               </svg>
-              <span className="ml-2 text-2xl font-bold">Aussie Motors</span>
+              <span className="ml-2 text-2xl font-bold">Aussie Rides</span>
             </div>
             <p className="text-gray-400 mb-4">Zambia&apos;s premier destination for luxury vehicles. Experience affordable luxury with exceptional service.</p>
           </div>
@@ -58,14 +58,14 @@ export default function Footer() {
                   <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
                   <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
                 </svg>
-                info@aussiemotors.zm
+                info@aussierides.com
               </p>
             </div>
           </div>
         </div>
 
         <div className="border-t border-gray-800 mt-8 pt-8 text-center">
-          <p className="text-gray-400">&copy; {new Date().getFullYear()} Aussie Motors. All rights reserved. | Bringing affordable luxury to Zambia.</p>
+          <p className="text-gray-400">&copy; {new Date().getFullYear()} Aussie Rides. All rights reserved. | Bringing affordable luxury to Zambia.</p>
         </div>
       </div>
     </footer>
