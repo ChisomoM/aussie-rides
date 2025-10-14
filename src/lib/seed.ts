@@ -220,6 +220,30 @@ export async function getVehicles(): Promise<Vehicle[]> {
 }
 
 /**
+ * Gets a single vehicle by ID from the Firestore collection
+ * @param id - The vehicle ID
+ * @returns Vehicle or null if not found
+ */
+export async function getVehicle(id: string): Promise<Vehicle | null> {
+  try {
+    const docRef = doc(db, COLLECTION_NAME, id);
+    const snapshot = await getDoc(docRef);
+    
+    if (!snapshot.exists()) {
+      return null;
+    }
+    
+    return {
+      ...snapshot.data(),
+      id: snapshot.id,
+    } as Vehicle;
+  } catch (error) {
+    console.error("Error fetching vehicle:", error);
+    return null;
+  }
+}
+
+/**
  * Clears all vehicles from the Firestore collection
  * @returns Object containing success status and message
  */

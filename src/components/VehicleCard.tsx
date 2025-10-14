@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function VehicleCard(props: {
   id: string;
@@ -84,9 +85,12 @@ export default function VehicleCard(props: {
         </div>
         
         <div className="flex gap-2">
-          <button className="flex-1 bg-emerald-600 text-white py-2 px-4 rounded-lg hover:bg-emerald-700 transition-colors">
+          <Link 
+            href={`/vehicles/${props.id}`}
+            className="flex-1 bg-emerald-600 text-white py-2 px-4 rounded-lg hover:bg-emerald-700 transition-colors text-center"
+          >
             View Details
-          </button>
+          </Link>
           <button className="flex-1 border border-emerald-600 text-emerald-600 py-2 px-4 rounded-lg hover:bg-emerald-50 transition-colors">
             Test Drive
           </button>
