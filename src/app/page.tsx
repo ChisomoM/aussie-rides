@@ -9,13 +9,19 @@ import ConsultationBooking from "@/components/ConsultationBooking";
 export default function Home() {
   return (
     <div>
-      <Hero />
+      <div id="home">
+        <Hero />
+      </div>
       <Stats />
       <FeaturedVehicles />
-      <UnmatchedExcellence />
-      <ComprehensiveSolutions />
-      <Testimonials />
-      <ConsultationBooking />
+      <div id="about">
+        <UnmatchedExcellence />
+        <ComprehensiveSolutions />
+        <Testimonials />
+      </div>
+      <div id="contact">
+        <ConsultationBooking />
+      </div>
     </div>
   );
 }

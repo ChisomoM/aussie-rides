@@ -10,7 +10,9 @@ export default function VehicleCard(props: {
   fuel: string;
   transmission: string;
   images: string[];
-  featured?: boolean;
+  is_featured?: boolean;
+  is_rental?: boolean;
+  is_sale?: boolean;
   features?: string[];
 }) {
   const formatPrice = (price: number) => {
@@ -27,9 +29,19 @@ export default function VehicleCard(props: {
           sizes="(max-width: 768px) 100vw, 33vw"
           className="object-cover group-hover:scale-105 transition-transform duration-300"
         />
-        {props.featured && (
+        {props.is_featured && (
           <div className="absolute top-4 left-4 bg-emerald-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
             Featured
+          </div>
+        )}
+        {props.is_rental && (
+          <div className="absolute bottom-4 left-4 bg-emerald-600 text-white px-3 py-1 rounded-full text-xs font-semibold">
+            Available for Rent
+          </div>
+        )}
+        {props.is_sale && (
+          <div className="absolute bottom-4 right-4 bg-emerald-600 text-white px-3 py-1 rounded-full text-xs font-semibold">
+            For Sale
           </div>
         )}
         <div className="absolute top-4 right-4 bg-black/50 text-white px-2 py-1 rounded text-xs">
