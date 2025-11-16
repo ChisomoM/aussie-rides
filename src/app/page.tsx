@@ -5,11 +5,15 @@ import UnmatchedExcellence from "@/components/UnmatchedExcellence";
 import ComprehensiveSolutions from "@/components/ComprehensiveSolutions";
 import Testimonials from "@/components/Testimonials";
 import ConsultationBooking from "@/components/ConsultationBooking";
+import ComingSoon from "./coming-soon/page";
 
 export default function Home() {
   return (
     <div>
       <div id="home">
+      <ComingSoon/>
+      </div>
+      {/* <div id="home">
         <Hero />
       </div>
       <Stats />
@@ -21,7 +25,7 @@ export default function Home() {
       </div>
       <div id="contact">
         <ConsultationBooking />
-      </div>
+      </div> */}
     </div>
   );
 }

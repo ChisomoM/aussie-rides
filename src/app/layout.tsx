@@ -37,9 +37,9 @@ export default function RootLayout({
         // className={`${getMontserrat.variable} antialiased`}
       >
         <Providers>
-          <Navbar />
-          <main className="flex-1 pt-16">{children}</main>
-          <Footer />
+        {/*<Navbar /> */}
+          <main className="flex-1">{children}</main>
+          {/*<Footer /> */}
         </Providers>
       </body>
     </html>
